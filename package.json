@@ -1,6 +1,6 @@
 {
   "name": "af-image-uploader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AppFeel Image Uploader",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
