@@ -23,7 +23,7 @@ Example of use:
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
     <title>AppFeel Image Uploader WebComponent</title>
-    <script src='https://unpkg.com/af-image-uploader@0.0.1/dist/af-image-uploader.js'></script>
+    <script src='https://unpkg.com/af-image-uploader@latest/dist/af-image-uploader.js'></script>
 
 </head>
 
@@ -99,7 +99,7 @@ Type: `void`
 ### Script tag
 
 - [Publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages)
-- Put a script tag similar to this `<script src='https://unpkg.com/af-image-uploader@0.0.1/dist/af-image-uploader.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/af-image-uploader@latest/dist/af-image-uploader.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules

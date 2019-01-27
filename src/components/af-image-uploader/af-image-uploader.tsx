@@ -1,5 +1,8 @@
 import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
 
+// tslint:disable-next-line:max-line-length
+const UPLOAD_ICON = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+ICAgIDxnPiAgICAgICAgPGc+ICAgICAgICAgICAgPGc+ICAgICAgICAgICAgICAgIDxnPiAgICAgICAgICAgICAgICAgICAgPHBhdGggZmlsbD0iI0EzQjZDQyIgZD0iTTMyLDBjMTcuNywwLDMyLDE0LjMsMzIsMzJTNDkuNyw2NCwzMiw2NFMwLDQ5LjcsMCwzMlMxNC4zLDAsMzIsMHoiLz4gICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgIDwvZz4gICAgICAgIDwvZz4gICAgICAgIDxnIGlkPSJYTUxJRF8xNl8iPiAgICAgICAgICAgIDxnPiAgICAgICAgICAgICAgICA8Zz4gICAgICAgICAgICAgICAgICAgIDxnPiAgICAgICAgICAgICAgICAgICAgICAgIDxnPiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNDUuMywyNi44YzQuMiwwLDcuNywzLjQsNy43LDcuNmMwLDQuMi0zLjUsNy42LTcuNyw3LjZIMTguN2MtNC4yLDAtNy43LTMuNC03LjctNy42YzAtMy43LDIuNy02LjgsNi4zLTcuNWMwLTAuMiwwLTAuMywwLTAuNWMwLTMuMiwyLjctNS45LDUuOS01LjljMC43LDAsMS40LDAuMSwyLDAuM2MxLjYtMy41LDUuMS01LjksOS4yLTUuOWM1LjYsMCwxMC4xLDQuNSwxMC4xLDEwYzAsMC42LTAuMSwxLjItMC4yLDEuN0g0NS4zeiIvPiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgIDwvZz4gICAgICAgIDwvZz4gICAgICAgIDxnPiAgICAgICAgICAgIDxnPiAgICAgICAgICAgICAgICA8Zz4gICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGZpbGw9IiNGNzZCNkIiIHBvaW50cz0iMzIsMjguNyA0MCwzNy4zIDM2LDM3LjMgMzYsNDggMjgsNDggMjgsMzcuMyAyNCwzNy4zICIvPiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+';
+
 interface IFileReaderEventTarget extends EventTarget {
     result: string;
 }
@@ -43,7 +46,8 @@ export class AfImageUploader {
     /**
      * Icon source image (svg, png, jpg, gif, ...)
      */
-    @Prop() public iconSrc: string = './assets/upload-cloud-flat.svg';
+    @Prop() public iconSrc: string = UPLOAD_ICON;
+    // @Prop() public iconSrc: string = './assets/upload-cloud-flat.svg';
     /**
      * The color when it is active
      */
