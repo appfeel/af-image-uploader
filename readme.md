@@ -1,6 +1,6 @@
 
 
-# AppFeel Image Uploader WebComponent<br>[![License][license]][npm-url] [![NPM version][npm-version]][npm-url] [![NPM downloads][npm-downloads]][npm-url] [![Built With Stencil][stencil]][stencil-url]
+AppFeel Image Uploader WebComponent<br>[![License][license]][npm-url] [![NPM version][npm-version]][npm-url] [![NPM downloads][npm-downloads]][npm-url] [![Built With Stencil][stencil]][stencil-url]
 ==========================
 
 
@@ -42,7 +42,7 @@ Example of use:
         console.log('Image selected', image.detail);
     }
     function onLoad(image) {
-        console.log('Image preview finished', image.detail);
+        console.log('Image preview completed', image.detail);
     }
     async function getFile() {
         console.log('Selected image', await imageUploader.getFile());
